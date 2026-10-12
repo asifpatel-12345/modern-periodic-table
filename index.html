@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d19">
+  <title>PeriodicX | Interactive Periodic Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">Periodic<span>X</span></a>
+    <div class="header-tag">CHEMISTRY • EXPLORED</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">THE ELEMENT UNIVERSE</div>
+      <h1>Explore the <span>Periodic Table.</span></h1>
+      <p>118 elements. Endless discoveries. Hover to explore the science behind every element.</p>
+
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="search" type="search"
+          placeholder="Search element, symbol or atomic number...">
+        <button id="clearSearch" aria-label="Clear search">✕</button>
+      </div>
+      <div id="resultCount" class="result-count">118 ELEMENTS</div>
+    </section>
+
+    <section class="table-section">
+      <div class="table-heading">
+        <h2>Periodic Table <span>of Elements</span></h2>
+        <span class="live"><i></i> INTERACTIVE</span>
+      </div>
+
+      <div id="periodicTable" class="periodic-table"></div>
+
+      <div class="series-label">LANTHANIDES & ACTINIDES</div>
+      <div id="seriesTable" class="series-table"></div>
+
+      <div class="legend" id="legend"></div>
+      <p class="hint">Hover to preview · Click for full details · Search to find an element</p>
+    </section>
+
+    <section class="details" id="details">
+      <div class="detail-image">
+        <img id="elementImage" alt="Element illustration"
+          src="https://placehold.co/400x300/111a2b/8aa8d8?text=Select+an+Element">
+        <span class="image-caption" id="imageCaption">ELEMENT VISUAL</span>
+      </div>
+      <div class="detail-content">
+        <div class="detail-kicker">ELEMENT PROFILE</div>
+        <h2 id="detailName">Select an element</h2>
+        <p id="detailCategory">Click any element on the table to discover more.</p>
+        <div class="detail-symbol" id="detailSymbol">?</div>
+        <div class="detail-stats">
+          <div><small>ATOMIC NUMBER</small><strong id="detailNumber">—</strong></div>
+          <div><small>ATOMIC MASS</small><strong id="detailMass">—</strong></div>
+          <div><small>PERIOD</small><strong id="detailPeriod">—</strong></div>
+          <div><small>GROUP</small><strong id="detailGroup">—</strong></div>
+        </div>
+        <p class="description" id="detailDescription">
+          Select an element to see its scientific properties and image.
+        </p>
+        <a id="wikiLink" href="https://en.wikipedia.org/wiki/Periodic_table"
+           target="_blank" rel="noopener noreferrer">Explore on Wikipedia ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>PERIODICX · BUILT FOR CURIOUS MINDS · 118 ELEMENTS</footer>
+  <script src="script.js"></script>
+</body>
+</html>
